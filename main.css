@@ -96,7 +96,7 @@ body::after {
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth transition */
     overflow: hidden; /* Ensure image stays inside the circle */
     margin-bottom: 8px; /* Space between button and text */
-    animation: pulse 5s infinite; /* Apply pulse animation */
+    animation: pulse 4s infinite; /* Apply pulse animation */
 }
 
 /* Hover effect for the round buttons */
