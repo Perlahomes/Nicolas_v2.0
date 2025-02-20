@@ -96,7 +96,7 @@ body::after {
     transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Smooth transition */
     overflow: hidden; /* Ensure image stays inside the circle */
     margin-bottom: 8px; /* Space between button and text */
-    animation: pulse 4s infinite; /* Apply pulse animation */
+    animation: pulse 5s infinite; /* Apply pulse animation */
 }
 
 /* Hover effect for the round buttons */
@@ -196,7 +196,7 @@ p {
 /* Define the animation for fade-in effect */
 .fade-in {
     opacity: 0; /* Start as invisible */
-    animation: fadeInAnimation 2s forwards; /* Apply animation */
+    animation: fadeInAnimation 4s forwards; /* Apply animation */
 }
 
 @keyframes fadeInAnimation {
@@ -261,4 +261,26 @@ a {
 .tourist-guide {
     display: block;
     white-space: pre-line;
+}
+
+.social-media {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    font-size: 30px;  /* Size of the icons */
+    color: #000;      /* Icon color */
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);  /* Slightly enlarge the icon on hover */
+    color: #0077b5;         /* Change color on hover (blue for Facebook) */
+}
+
+.social-media a:nth-child(2) .social-icon:hover {
+    color: #e4405f;  /* Change color on hover (red/pink for Instagram) */
 }
